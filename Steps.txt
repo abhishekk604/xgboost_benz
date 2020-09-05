@@ -1,0 +1,19 @@
+Steps:
+
+1. Checked Null values, no null value is present.
+
+2. Label encoded object data type
+
+3. Dropped all the columns having 0 variance.
+
+4. Splitted data into 80% train set and 20% test set.
+
+5. Standardized data.
+
+6. Trained the model using xgboost.
+
+7. Predicted the data for test set.
+
+Experiment:
+Tried applying PCA after standardized the data, but that significantly dropped the R-squared value even after choosing the efficient n_componenets for PCA.
+
